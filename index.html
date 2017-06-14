@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,innitial-scale=1,maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="UI/favicon.ico">
+<title>何督的简历</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/jquery.smooth-scroll.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script>
+	$(function(){
+		$("a").smoothScroll();
+	})
+</script>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation" name="role">
+		<div class="container">
+			<ul class="nav navbar-nav" id="topmenu_btns">
+				<li><img src="UI/何.png" alt=""></li>
+				<li><a href="#role">主&emsp;&emsp;页</a></li>
+				<li><a href="#info">个人信息</a></li>
+				<li><a href="#skill">技能水平</a></li>
+				<li><a href="#project">项目介绍</a></li>
+				<li><a href="#foot">联系方式</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="intro">
+		<div class="container">
+			<h1>&lt;html&gt;</h1>
+			<h2>前端工程师/hedu@hedudu.top</h2>
+		</div>
+	</div>
+	<div id="brief" name="brief">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h4>个人简介
+					</h4>
+				</div>
+				<div class="col-lg-6">
+					<p>我是一名前端工程师,目前谋寻一份前端开发的工作。我对前端、设计、IT等东西都很感兴趣，但我最擅长的还是前端开发。当然我也掌握了其他技术，例如：ASP.NET，SQL Server以及其他领域的技能：PS,书法，OFFICE。
+					</p>
+				</div>
+				<div class="col-lg-3">
+				</div>
+			</div>
+			<br>
+			<hr>
+		</div>
+		
+	</div>
+	<div id="info" name="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<p>求职意向</p>
+				</div>
+				<div class="col-lg-6">			
+					<p><b>自我评价</b></p>
+					<p><font>
+							<ol>
+								<li>勤奋认真，做事热情积极，较强的责任心。</li>
+								<li>环境适应能力强，能够很快适应新的工作环境。</li>
+								<li>具备团队合作意识，善于协调团队中的人际关系。</li>
+								<li>能够虚心接受他人的意见与建议，对符合的予以采纳。</li>
+								<li>具有良好的英语听说读写能力。</li>
+							</ol>
+						</font>
+					</p>
+					<p><b>工作类型</b></p>
+					<p><font>
+							<ol>
+								<li>熟练掌握HTML、JavaScript+jQuery、DIV+CSS等网页设计语言，能满足日常的开发需要；</li>
+								<li>熟悉Sql Server的数据库设计,能熟练掌握存储过程、视图、事务等进行编码开发；</li>
+								<li>熟悉运用面向对象编程思想，进行B/S和C/S结构的开发的开发；</li>
+								<li>能够使用WebService、静态化和企业库等进行网站的优化</li>
+								<li>能够熟练使用jQueryEasyUI、Ajax异步交互对后台的页面进行美化和相关动态数据的操作；</li>
+								<li>熟悉三层框架（模型层、数据访问层、业务逻辑层、表现层）做项目，熟悉MVC框架设计;</li>
+								<li>熟悉项目开发流程，能运用敏捷开发模式进行项目开发；</li>
+							</ol>
+						</font>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><b>姓名:</b><font>何督</font></p>
+					<p><b>职能:</b><font>WEB前端开发</font></p>
+					<p><b>目标地点:</b><font>武汉、深圳</font></p>
+					<p><b>工作类型:</b><font>全职</font></p>
+				</div>
+			</div>
+			<br>
+			<hr>
+		</div>
+		
+	</div>
+	<div id="skill" name="skill">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<p>技能</p>
+				</div>
+				<div class="col-lg-3 centered">
+					<canvas id="CVS1" width="130" height="130" style="width:130px;height:130px">
+					</canvas>
+					<p>JAVASCRIPT</p>
+					<script>
+						var doughnutData = [
+								{
+									value: 80,
+									color:"#1abc9c"
+								},
+								{
+									value : 20,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("CVS1").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 centered">
+					<canvas id="CVS2" width="130" height="130" style="width:130px;height:130px">
+					</canvas>
+					<p>C#</p>
+					<script>
+						var doughnutData = [
+								{
+									value: 65,
+									color:"#1abc9c"
+								},
+								{
+									value : 35,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("CVS2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 centered">
+					<canvas id="CVS3" width="130" height="130" style="width:130px;height:130px">
+					</canvas>
+					<p>ASP.NET</p>
+					<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#1abc9c"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("CVS3").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 centered col-lg-offset-3">
+					<canvas id="CVS4" width="130" height="130" style="width:130px;height:130px">
+					</canvas>
+					<p>PHOTOSHOP</p>
+					<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#1abc9c"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("CVS4").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 centered">
+					<canvas id="CVS5" width="130" height="130" style="width:130px;height:130px">
+					</canvas>
+					<p>HTML+CSS</p>
+					<script>
+						var doughnutData = [
+								{
+									value: 75,
+									color:"#1abc9c"
+								},
+								{
+									value : 25,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("CVS5").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 centered">
+					<canvas id="CVS6" width="130" height="130" style="width:130px;height:130px">
+					</canvas>
+					<p>BOOTSTRAP</p>
+					<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#1abc9c"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("CVS6").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+			</div>
+			<br>
+			<hr>
+		</div>
+	</div>
+	<div id="project" name="project">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					项目经验
+				</div>
+				<div class="col-lg-6">
+					<p><t>书画协会网站</t></p>
+					<h4>项目描述</h4>
+					<p><more>主要为该社团提供一个与外界交流，想外界展示自己精神面貌的平台，同时也提供一个小型论坛进行交流互动。</more>
+					</p>
+					<h4>责任描述</h4>
+					<p><more>在本项目中本人既是Leader也是高效的执行者角色。本人独立完成了整个项目的前端设计工作，并参与开发与测试等环节中。
+					此系统前端采用DIV+CSS模式，并使用JS+JQ来实现页面的优化和可读性后台使用三层架构的基本框架来实现论坛后台的用户和帖子管理.</more>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><i>2016/3-2016/4</i></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>教务管理系统</t></p>
+					<h4>项目描述</h4>
+					<p><more>该项目主要是完成教务管理系统的开发，该系统分为首页、登陆注册、用户管理、学生界面(课程,个人信息,选课)、教师界面(课程,个人信息,排课)、退出5个模块。
+					与4名组员共同努力下，分别在用户管理实现了模糊分页查询、分类分页查询等功能；首页实现了登录、注册、修改、查看信息等功能；学生、教师模块实现了个人信息查询、课程查询等功能；
+					本项目结构上分为表现层、业务层和数据访问层。层次间的依赖关系自下到上。采用的技术有BootStrap,三层架构,DIV+CSS 等。</more>
+					</p>
+					<h4>责任描述</h4>
+					<p><more>在本项目中本人既是Leader也是高效的执行者角色。本人独立完成了整个项目的设计工作，并参与开发与测试等环节中。
+					在项目中主要完成了首页展示、学生、教师界面、数据库设计等主要功能模块，采用DIV+CSS, JQuery,Bootstrap等技术，后台使用三层架构架构.</more>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><i>2017/5-2017/6</i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="foot" name="foot">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">联系方式</div>
+				<div class="col-lg-6">
+					<p>
+						<b>电子邮箱</b><br>
+						<font>hedu@hedudu.top</font>
+					</p>
+					<p>
+						<b>手机号码</b><br>
+						<font>13797079653</font>
+					</p>
+					<p>
+						<b>现居住地</b><br>
+						<font>武汉船舶职业技术学院</font>
+					</p>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+			$("#topmenu_btns li").mouseover(function(){
+				$(this).addClass("active");
+			}).mouseleave(function(){
+				$(this).removeClass("active");
+			});
+		})
+	</script>
+</body>
+</html>
